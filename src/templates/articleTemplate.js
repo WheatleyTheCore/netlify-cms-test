@@ -11,7 +11,7 @@ export default function Template({
             <div className="article">
                 <h1>{frontmatter.title}</h1>
                 <h2>{frontmatter.date}</h2>
-                <image src={frontmatter.image} />
+                <p>{frontmatter.image}</p>
                 <div
                     className="article-content"
                     dangerouslySetInnerHTML={{ __html: html }}
